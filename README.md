@@ -4,7 +4,7 @@ Una bitàcola d'exploració personal sobre art i intel·ligència artificial.
 
 ## Accés
 
-El projecte és accessible en línia a: [URL de GitHub Pages]
+El projecte és accessible en línia a: https://clopezca.github.io/trac/
 
 ## Estructura
 
