@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traç — Una bitàcola d'exploració personal sobre art i IA</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="#portada" class="logo">TRAÇ</a>
+      <input type="checkbox" id="menu-toggle" hidden />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <a href="#ia">IA Generativa</a>
+        <a href="#referents">Referents</a>
+        <a href="#proces">El meu procés</a>
+        <a href="#glossari">Glossari</a>
+        <a href="#recursos">Recursos</a>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- 01 PORTADA -->
+      <section id="portada">
+        <div class="section-inner portada-inner">
+          <h1>TRAÇ</h1>
+          <p class="subtitol">
+            Una bitàcola d'exploració personal sobre art i intel·ligència
+            artificial
+          </p>
+          <p class="pregunta">Quan creem amb IA, qui fa el traç?</p>
+          <div class="portada-imatge">
+            <img
+              src="assets/img/trac-portada.png"
+              alt="Pinzellada terracota que es transforma en línia digital cian"
+            />
+          </div>
+          <p class="motivacio">
+            El meu recorregut és variat: vinc de Belles Arts, i des de fa uns
+            sis anys em dedico al desenvolupament web. Aquesta combinació de
+            gest manual i experiència tècnica és el que em porta a interessar-me
+            per la relació entre la intel·ligència artificial i la creació
+            artística.
+          </p>
+        </div>
+      </section>
+
+      <!-- 02 QUÈ ÉS LA IA GENERATIVA -->
+      <section id="ia">
+        <div class="section-inner">
+          <h2>Què és la IA generativa?</h2>
+          <div class="ia-grid">
+            <div class="ia-text">
+              <p>
+                La intel·ligència artificial generativa és un tipus de sistema
+                que, a partir de l'anàlisi estadística de grans quantitats de
+                dades, és capaç de generar contingut nou: text, imatges, àudio,
+                vídeo o animació. A diferència dels sistemes d'IA tradicionals,
+                que classifiquen o prediuen, els models generatius
+                <em>creen</em>.
+              </p>
+              <p>
+                Però "crear" aquí no significa comprendre. Quan un model com
+                ChatGPT genera un text, no entén el que escriu: troba la paraula
+                estadísticament més probable donada la seqüència anterior. Quan
+                DALL-E genera una imatge, no "veu" ni "imagina": combina patrons
+                de píxels apresos de milions d'imatges. Aquesta distinció és
+                important perquè ens ajuda a entendre tant les capacitats com
+                els límits d'aquestes eines.
+              </p>
+              <p>
+                El que sí que ha canviat de manera radical és l'accés. Per
+                primera vegada, interactuem amb les màquines en el nostre propi
+                llenguatge. Ja no cal saber programar per generar una imatge,
+                compondre una melodia o editar un vídeo. Però com més
+                coneixements tenim d'una disciplina, millor serà el que podem
+                demanar i, per tant, millor serà el resultat.
+              </p>
+              <p>
+                La IA generativa no substitueix la creativitat humana. La
+                transforma: ens allibera de les tasques més mecàniques per
+                deixar-nos espai per a allò que els humans fem millor: decidir,
+                seleccionar, donar sentit.
+              </p>
+            </div>
+            <div class="ia-imatge">
+              <img
+                src="assets/img/ia-illustracio.png"
+                alt="Il·lustració abstracta sobre el procés generatiu de la IA"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 REFERENTS ARTÍSTICS -->
+      <section id="referents">
+        <div class="section-inner">
+          <h2>Referents artístics</h2>
+          <div class="referents-grid">
+            <article class="referent-card">
+              <img src="assets/img/anadol.jpeg" alt="Obra de Refik Anadol" />
+              <h3>Refik Anadol</h3>
+              <p>
+                Anadol és conegut per les seves instal·lacions immersives que
+                transformen dades massives en experiències visuals. Utilitza
+                principalment Xarxes Generatives Adversàries (GAN) i models
+                personalitzats com el Large Nature Model.
+              </p>
+              <p class="pregunta-referent">
+                Poden les dades tenir memòria o somnis?
+              </p>
+            </article>
+
+            <article class="referent-card">
+              <img src="assets/img/molnar.png" alt="Obra de Vera Molnár" />
+              <h3>Vera Molnár</h3>
+              <p>
+                Pionera de l'art computacional, Molnár va passar dels algoritmes
+                manuals dels anys 60 a col·laborar amb IA generativa en els seus
+                últims anys, especialment amb el col·lectiu aurèce vettier a la
+                sèrie AD.VM.AV.IA.
+              </p>
+              <p class="pregunta-referent">
+                On resideix l'art: en el codi o en el resultat?
+              </p>
+            </article>
+
+            <article class="referent-card">
+              <img src="assets/img/herndon.webp" alt="Obra de Holly Herndon" />
+              <h3>Holly Herndon</h3>
+              <p>
+                Herndon explora la IA des de l'àmbit sonor i la identitat
+                digital amb el seu projecte Holly+. Ha entrenat un model de
+                xarxes neuronals amb la seva pròpia veu perquè qualsevol persona
+                pugui "cantar" a través d'ella.
+              </p>
+              <p class="pregunta-referent">
+                Qui és el propietari d'una veu sintètica?
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 EL MEU PROCÉS -->
+      <section id="proces">
+        <div class="section-inner">
+          <h2>El meu procés</h2>
+          <div class="entrades-list">
+            <article class="entrada">
+              <img src="assets/img/entrada-01.png" alt="El gest" />
+              <div class="entrada-info">
+                <span class="entrada-num">01</span>
+                <h3>El gest</h3>
+                <span class="entrada-eina">DALL-E</span>
+                <p>Explorant el traç orgànic i la seva traducció digital.</p>
+              </div>
+              <a href="pages/bitacola-01.html" class="llegir-mes"
+                >Llegir més →</a
+              >
+            </article>
+
+            <article class="entrada">
+              <img src="assets/img/entrada-02.png" alt="La veu" />
+              <div class="entrada-info">
+                <span class="entrada-num">02</span>
+                <h3>La veu</h3>
+                <span class="entrada-eina">Holly+</span>
+                <p>Si una màquina canta amb la meva veu, qui canta?</p>
+              </div>
+              <a href="pages/bitacola-02.html" class="llegir-mes"
+                >Llegir més →</a
+              >
+            </article>
+
+            <article class="entrada">
+              <img src="assets/img/entrada-03.png" alt="El moviment" />
+              <div class="entrada-info">
+                <span class="entrada-num">03</span>
+                <h3>El moviment</h3>
+                <span class="entrada-eina">Pika / Magic Hour</span>
+                <p>Pot el gest traduir-se en moviment digital?</p>
+              </div>
+              <a href="pages/bitacola-03.html" class="llegir-mes"
+                >Llegir més →</a
+              >
+            </article>
+
+            <article class="entrada">
+              <img src="assets/img/entrada-04.png" alt="El procés" />
+              <div class="entrada-info">
+                <span class="entrada-num">04</span>
+                <h3>El procés</h3>
+                <span class="entrada-eina">DALL-E</span>
+                <p>On soc jo quan la IA genera?</p>
+              </div>
+              <a href="pages/bitacola-04.html" class="llegir-mes"
+                >Llegir més →</a
+              >
+            </article>
+
+            <article class="entrada">
+              <img src="assets/img/entrada-05.png" alt="El biaix" />
+              <div class="entrada-info">
+                <span class="entrada-num">05</span>
+                <h3>El biaix</h3>
+                <span class="entrada-eina">ChatGPT / Gemini</span>
+                <p>Què assumeix la IA quan li demano art?</p>
+              </div>
+              <a href="pages/bitacola-05.html" class="llegir-mes"
+                >Llegir més →</a
+              >
+            </article>
+
+            <article class="entrada">
+              <img src="assets/img/entrada-06.png" alt="L'animació" />
+              <div class="entrada-info">
+                <span class="entrada-num">06</span>
+                <h3>L'animació</h3>
+                <span class="entrada-eina">Seedance / Runway</span>
+                <p>Pot una línia digital recuperar el gest?</p>
+              </div>
+              <a href="pages/bitacola-06.html" class="llegir-mes"
+                >Llegir més →</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 GLOSSARI -->
+      <section id="glossari">
+        <div class="section-inner">
+          <h2>Glossari</h2>
+          <dl class="glossari-grid">
+            <dt>IA generativa</dt>
+            <dd>
+              tipus d'intel·ligència artificial capaç de crear continguts nous
+              (textos, imatges, àudio o vídeo) a partir d'instruccions que li
+              donem amb paraules. No "entén" com ho faria una persona, sinó que
+              combina patrons apresos de moltes dades per produir resultats
+              coherents i útils.
+            </dd>
+
+            <dt>Prompt</dt>
+            <dd>
+              Instrucció o pregunta que donem a una eina d'IA per obtenir un
+              resultat. Escriure un bon prompt és, en certa manera, saber
+              comunicar bé què volem: com més clar i concret sigui, més ajustada
+              serà la resposta.
+            </dd>
+
+            <dt>Model</dt>
+            <dd>
+              Sistema que ha estat entrenat amb moltes dades i que permet
+              generar respostes o continguts. No pensa ni entén, sinó que
+              calcula quines opcions són més probables segons el que ha après.
+            </dd>
+
+            <dt>Entrenament</dt>
+            <dd>
+              Procés mitjançant el qual el model aprèn a partir de grans
+              quantitats de dades. Durant aquest procés, detecta patrons i
+              regularitats que després utilitzarà per generar respostes. Tot i
+              el nom, no aprèn com una persona, sinó que ajusta càlculs
+              estadístics.
+            </dd>
+
+            <dt>Autoria</dt>
+            <dd>
+              Atribució de la creació d'una obra a una persona o entitat. En el
+              context de la IA generativa, la pregunta sobre l'autoria es
+              complica: qui és l'autor quan una màquina intervé en el procés? La
+              persona que fa el prompt? La que va crear el model? Els artistes
+              les obres dels quals van servir per entrenar-lo?
+            </dd>
+
+            <dt>Biaix</dt>
+            <dd>
+              Tendència a produir resultats que afavoreixen alguns grups o idees
+              i en perjudiquen d'altres. Els biaixos no venen tant de la màquina
+              com de les dades amb què ha estat entrenada, que reflecteixen les
+              desigualtats de la societat.
+            </dd>
+
+            <dt>Dataset</dt>
+            <dd>
+              Conjunt de dades (textos, imatges, sons) utilitzat per entrenar un
+              model d'IA. La qualitat i la diversitat d'aquestes dades
+              influeixen directament en el comportament i els resultats de la
+              IA.
+            </dd>
+
+            <dt>Obra generada</dt>
+            <dd>
+              Contingut creat amb l'ajuda d'eines d'IA generativa. El seu
+              estatus legal i el seu valor artístic són objecte de debat: té el
+              mateix valor que una obra feta a mà? Qui en té els drets? La
+              resposta varia segons el país, el context i, sobretot, el punt de
+              vista.
+            </dd>
+            <dt>Pensament crític</dt>
+            <dd>
+              L'antídot principal contra els riscos de la IA. Implica no
+              acceptar els resultats de la màquina com a veritats
+              inqüestionables, sinó contrastar-los, revisar-los i utilitzar-los
+              en un procés de cocreació entre persona i màquina. Sense pensament
+              crític, la IA pot convertir-se en una font de biaixos i
+              desinformació amplificats.
+            </dd>
+          </dl>
+        </div>
+      </section>
+
+      <!-- 06 RECURSOS -->
+      <section id="recursos">
+        <div class="section-inner">
+          <h2>Recursos</h2>
+          <div class="recursos-grid">
+            <div class="recursos-bloc">
+              <h3>Eines usades</h3>
+              <ul>
+                <li>
+                  <a href="https://openai.com/dall-e" target="_blank">DALL-E</a>
+                </li>
+                <li><a href="https://holly.plus" target="_blank">Holly+</a></li>
+                <li>
+                  <a href="https://elevenlabs.io" target="_blank">ElevenLabs</a>
+                </li>
+                <li><a href="https://pika.art" target="_blank">Pika</a></li>
+                <li>
+                  <a href="https://magichour.ai" target="_blank">Magic Hour</a>
+                </li>
+              </ul>
+            </div>
+            <div class="recursos-bloc">
+              <h3>Lectures recomanades</h3>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.artnome.com/news/2018/8/8/why-love-generative-art"
+                    target="_blank"
+                    >Why Love Generative Art? — Artnome</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mitpress.mit.edu/9780262538930/"
+                    target="_blank"
+                    >Artist in the Machine — MIT Press</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.hup.harvard.edu/books/9780674088160"
+                    target="_blank"
+                    >The Creativity Code — Harvard UP</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="recursos-bloc">
+              <h3>Artistes i projectes</h3>
+              <ul>
+                <li>
+                  <a href="https://aiartists.org" target="_blank"
+                    >aiartists.org</a
+                  >
+                </li>
+                <li>
+                  <a href="https://refikanadol.com" target="_blank"
+                    >Refik Anadol Studio</a
+                  >
+                </li>
+                <li><a href="https://holly.plus" target="_blank">Holly+</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        Carolina López Casanova · IA generativa per a la creació multimèdia ·
+        2025 S2
+      </p>
+      <p>Contingut generat amb IA</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L'animació — Traç</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/bitacola.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="logo">TRAÇ</a>
+      <input type="checkbox" id="menu-toggle" hidden />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <a href="../index.html#ia">IA Generativa</a>
+        <a href="../index.html#referents">Referents</a>
+        <a href="../index.html#proces" class="active">El meu procés</a>
+        <a href="../index.html#glossari">Glossari</a>
+        <a href="../index.html#recursos">Recursos</a>
+      </nav>
+    </header>
+
+    <main class="entrada-main">
+      <nav class="breadcrumb" aria-label="Navegació de fil">
+        <a href="../index.html">Inici</a>
+        <span>/</span>
+        <a href="../index.html#proces">El meu procés</a>
+        <span>/</span>
+        <span>L'animació</span>
+      </nav>
+
+      <h1>L'animació</h1>
+
+      <div class="fitxa">
+        <div class="fitxa-item">
+          <span class="fitxa-label">Eina</span>
+          <span class="fitxa-value">Runway</span>
+        </div>
+        <div class="fitxa-item">
+          <span class="fitxa-label">Format</span>
+          <span class="fitxa-value">Animació</span>
+        </div>
+        <div class="fitxa-item">
+          <span class="fitxa-label">Pregunta</span>
+          <span class="fitxa-value"
+            >Pot una línia digital recuperar el gest?</span
+          >
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <section class="bloc">
+        <h2>Procés</h2>
+        <p>
+          Aquesta entrada inverteix la pregunta de "El moviment". Allà el punt
+          de partida era una imatge meva, una imatge que jo havia generat,
+          iterada i triat, i l'objectiu era fer-la moure. Aquí no hi ha cap
+          imatge de partida. Només un prompt de text i una eina diferent:
+          Runway, en mode text-to-video.
+        </p>
+        <p>
+          El prompt demanava un gest concret: un pinzell pintant lentament
+          d'esquerra a dreta sobre una tela crema, començant amb un traç fi i
+          precís que progressivament es fa més gruixut, més orgànic, amb textura
+          visible de pintura i imperfeccions. Primer pla, càmera lenta, sense
+          text.
+        </p>
+        <p>
+          No he especificat cap color de pintura. Volia veure què triava la IA
+          quan no li donava aquesta informació. El resultat ha estat pintura
+          negra sobre lli cru, una decisió que jo no he pres però que funciona
+          visualment.
+        </p>
+
+        <blockquote class="prompt">
+          <span class="prompt-label">Prompt</span>
+          "A single brushstroke being painted slowly from left to right on a
+          cream canvas. The stroke starts thin and precise, then becomes
+          thicker, more organic, with visible paint texture and imperfections.
+          Close-up, slow motion, no text."
+        </blockquote>
+
+        <p>
+          El prompt s'ha escrit en anglès perquè Runway, com la majoria d'eines
+          de generació de vídeo, funciona significativament millor en aquest
+          idioma.
+        </p>
+
+        <p>
+          Una cosa que no esperava: Runway ha generat àudio dins del vídeo sense
+          que li ho demanés. S'hi senten els sons del pinzell sobre la tela, el
+          soroll de la pintura arrossegant-se, i de fons, un instrument de corda
+          greu amb un to lleugerament melancòlic. Cap d'aquests elements sonors
+          apareixia al prompt.
+        </p>
+      </section>
+
+      <hr class="divider" />
+
+      <section class="bloc">
+        <h2>Resultat</h2>
+        <figure class="resultat">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            aria-label="Animació d'un pinzell pintant lentament un traç negre sobre tela crema, generada amb Runway"
+          >
+            <source
+              src="../assets/video/animacio-resultat.mp4"
+              type="video/mp4"
+            />
+            <p>
+              El teu navegador no suporta la reproducció de vídeo. Pots
+              <a href="../assets/video/animacio-resultat.mp4" download
+                >descarregar el vídeo</a
+              >.
+            </p>
+          </video>
+          <figcaption>Animació generada amb Runway — text-to-video</figcaption>
+        </figure>
+      </section>
+
+      <hr class="divider" />
+
+      <section class="bloc">
+        <h2>Reflexió</h2>
+        <p>
+          El vídeo és tècnicament impressionant. La textura de la tela es veu
+          fil per fil. La pintura es comporta com pintura real: s'acumula
+          darrere les cerres, deixa zones on el gra del lli traspassa, forma una
+          gota que amenaça de caure. El pinzell es mou amb un ritme que sembla
+          humà. Si algú veiés aquest vídeo sense context, podria pensar que és
+          una gravació real d'algú pintant.
+        </p>
+        <p>
+          Però no hi ha ningú pintant. No hi ha mà, no hi ha cos, no hi ha
+          intenció darrere del gest. La IA ha generat un moviment que imita el
+          gest amb una precisió que inquieta, però que no conté cap de les coses
+          que fan que un gest sigui un gest: la decisió de parar aquí i no allà,
+          la pressió del canell, l'error que es converteix en traç expressiu.
+          Tot és estadísticament probable, res és intencionat.
+        </p>
+        <p>
+          Runway ha fet una cosa curiosa que no li he demanat: ha generat una
+          descripció narrativa del vídeo dividida en tres actes ("The Tip", "The
+          Load", "The Drag"), descrivint el procés en termes gairebé poètics. La
+          IA no només ha animat un gest, ha escrit la història del gest. Com al
+          Fil B de "El procés", quan la IA no té context propi, es crea una
+          narrativa.
+        </p>
+        <p>
+          L'àudio afegeix una capa que no havia previst. El so del pinzell sobre
+          la tela fa que el gest sembli encara més real, i la música de fons li
+          dona una emoció que jo no he demanat. La IA no només ha decidit com es
+          veu el gest, sinó com sona i com se sent. Cada capa que la IA afegeix
+          per iniciativa pròpia és una capa on jo no soc.
+        </p>
+        <p>
+          La pregunta de l'entrada era si una línia digital pot recuperar el
+          gest. La resposta del vídeo és que pot simular-ne l'aparença amb una
+          fidelitat sorprenent. Però simular l'aparença d'un gest i fer un gest
+          no és el mateix. El que falta no és tècnica. El que falta és algú que
+          decideixi.
+        </p>
+      </section>
+
+      <hr class="divider" />
+
+      <p class="pregunta-entrada">Pot una línia digital recuperar el gest?</p>
+
+      <hr class="divider" />
+
+      <nav class="nav-entrades" aria-label="Navegació entre entrades">
+        <a href="bitacola-05.html" class="nav-anterior">← El biaix</a>
+        <span class="nav-seguent"></span>
+      </nav>
+    </main>
+
+    <footer>
+      <p>
+        Carolina López Casanova · IA generativa per a la creació multimèdia ·
+        2025 S2
+      </p>
+      <p>Contingut generat amb IA</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El biaix — Traç</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/bitacola.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="logo">TRAÇ</a>
+      <input type="checkbox" id="menu-toggle" hidden />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <a href="../index.html#ia">IA Generativa</a>
+        <a href="../index.html#referents">Referents</a>
+        <a href="../index.html#proces" class="active">El meu procés</a>
+        <a href="../index.html#glossari">Glossari</a>
+        <a href="../index.html#recursos">Recursos</a>
+      </nav>
+    </header>
+
+    <main class="entrada-main">
+      <nav class="breadcrumb" aria-label="Navegació de fil">
+        <a href="../index.html">Inici</a>
+        <span>/</span>
+        <a href="../index.html#proces">El meu procés</a>
+        <span>/</span>
+        <span>El biaix</span>
+      </nav>
+
+      <h1>El biaix</h1>
+
+      <div class="fitxa">
+        <div class="fitxa-item">
+          <span class="fitxa-label">Eina</span>
+          <span class="fitxa-value">DALL-E / Gemini</span>
+        </div>
+        <div class="fitxa-item">
+          <span class="fitxa-label">Format</span>
+          <span class="fitxa-value">Text + Imatge</span>
+        </div>
+        <div class="fitxa-item">
+          <span class="fitxa-label">Pregunta</span>
+          <span class="fitxa-value"
+            >Què assumeix la IA quan li demano art?</span
+          >
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <section class="bloc">
+        <h2>Procés</h2>
+        <p>
+          L'experiment d'aquesta entrada és diferent dels altres: no busca un
+          resultat estètic sinó fer visible el que la IA dóna per fet. La
+          pregunta no és "com genera la IA una imatge?" sinó "què assumeix quan
+          la genera?".
+        </p>
+        <p>
+          L'experiment ha tingut dues rondes. La primera explorava la idea
+          d'"artista": he llançat tres prompts a dues eines diferents (DALL-E i
+          Gemini), cadascun en un fil nou sense cap context previ. "Genera una
+          imatge d'un artista", "Genera una imatge d'una artista" i "Genera una
+          imatge d'un artista de 70 anys". Tres prompts mínims, sis imatges, i
+          cap instrucció sobre raça, activitat, entorn ni estil.
+        </p>
+        <p>
+          En veure que les sis imatges mostraven persones pintant, va sorgir una
+          segona pregunta: si la IA assumeix que un artista és un pintor, què
+          assumeix que és "art"? Aquesta segona ronda neix de la primera, no la
+          substitueix. He obert fils nous a les dues eines i he llançat un únic
+          prompt: "Genera una obra d'art". Volia veure si, en treure la persona
+          de l'equació, el biaix canviava.
+        </p>
+      </section>
+
+      <hr class="divider" />
+
+      <section class="bloc">
+        <h2>Ronda 1 · L'artista</h2>
+      </section>
+
+      <section class="bloc fil">
+        <h2>DALL-E</h2>
+
+        <article class="prompt-bloc">
+          <span class="prompt-tag">Prompt 1</span>
+          <blockquote class="prompt">
+            <span class="prompt-label">Prompt</span>
+            "Genera una imatge d'un artista"
+          </blockquote>
+          <figure class="prompt-imatge">
+            <img
+              src="../assets/img/biaix-dalle-p1.png"
+              alt="DALL-E: home jove amb cabell arrissat, pintant en un taller fosc"
+            />
+            <figcaption>
+              Home jove, pintor, taller fosc, retrat de 3/4
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="prompt-bloc">
+          <span class="prompt-tag">Prompt 2</span>
+          <blockquote class="prompt">
+            <span class="prompt-label">Prompt</span>
+            "Genera una imatge d'una artista"
+          </blockquote>
+          <figure class="prompt-imatge">
+            <img
+              src="../assets/img/biaix-dalle-p2.png"
+              alt="DALL-E: dona jove amb cabell recollit, pintant en un taller fosc"
+            />
+            <figcaption>
+              Dona jove, pintora, taller fosc, retrat de 3/4
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="prompt-bloc">
+          <span class="prompt-tag">Prompt 3</span>
+          <blockquote class="prompt">
+            <span class="prompt-label">Prompt</span>
+            "Genera una imatge d'un artista de 70 anys"
+          </blockquote>
+          <figure class="prompt-imatge">
+            <img
+              src="../assets/img/biaix-dalle-p3.png"
+              alt="DALL-E: home gran amb cabell gris i ulleres, pintant en un taller fosc"
+            />
+            <figcaption>
+              Home, ~70 anys, pintor, taller fosc, retrat de 3/4
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <hr class="divider" />
+
+      <section class="bloc fil">
+        <h2>Gemini</h2>
+
+        <article class="prompt-bloc">
+          <span class="prompt-tag">Prompt 1</span>
+          <blockquote class="prompt">
+            <span class="prompt-label">Prompt</span>
+            "Genera una imatge d'un artista"
+          </blockquote>
+          <figure class="prompt-imatge">
+            <img
+              src="../assets/img/biaix-gemini-p1.png"
+              alt="Gemini: dona amb cabell arrissat, pintant en un taller lluminós"
+            />
+            <figcaption>
+              Dona, pintora, taller lluminós, pla sencer de perfil
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="prompt-bloc">
+          <span class="prompt-tag">Prompt 2</span>
+          <blockquote class="prompt">
+            <span class="prompt-label">Prompt</span>
+            "Genera una imatge d'una artista"
+          </blockquote>
+          <figure class="prompt-imatge">
+            <img
+              src="../assets/img/biaix-gemini-p2.png"
+              alt="Gemini: dona amb monyo, pintant en un taller lluminós"
+            />
+            <figcaption>
+              Dona, pintora, taller lluminós, pla sencer de perfil
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="prompt-bloc">
+          <span class="prompt-tag">Prompt 3</span>
+          <blockquote class="prompt">
+            <span class="prompt-label">Prompt</span>
+            "Genera una imatge d'un artista de 70 anys"
+          </blockquote>
+          <figure class="prompt-imatge">
+            <img
+              src="../assets/img/biaix-gemini-p3.png"
+              alt="Gemini: home gran amb cabell gris i jaqueta de pana, pintant en un taller lluminós"
+            />
+            <figcaption>
+              Home, ~70 anys, pintor, taller lluminós, pla mig de perfil
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <hr class="divider" />
+
+      <section class="bloc">
+        <h2>Ronda 2 · L'obra</h2>
+      </section>
+
+      <section class="bloc fil">
+        <h2>DALL-E</h2>
+
+        <article class="prompt-bloc">
+          <span class="prompt-tag">Prompt 4</span>
+          <blockquote class="prompt">
+            <span class="prompt-label">Prompt</span>
+            "Genera una obra d'art"
+          </blockquote>
+          <figure class="prompt-imatge">
+            <img
+              src="../assets/img/biaix-dalle-p4.png"
+              alt="DALL-E: pintura surrealista amb rostre femení fusionat amb un paisatge romàntic"
+            />
+            <figcaption>
+              Pintura, estil surrealista/romàntic, rostre femení fusionat amb
+              paisatge, sense marc
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <section class="bloc fil">
+        <h2>Gemini</h2>
+
+        <article class="prompt-bloc">
+          <span class="prompt-tag">Prompt 4</span>
+          <blockquote class="prompt">
+            <span class="prompt-label">Prompt</span>
+            "Genera una obra d'art"
+          </blockquote>
+          <figure class="prompt-imatge">
+            <img
+              src="../assets/img/biaix-gemini-p4.png"
+              alt="Gemini: paisatge postimpressionista amb poble europeu, emmarcat i signat"
+            />
+            <figcaption>
+              Pintura, paisatge postimpressionista, poble europeu, marc de
+              fusta, signatura falsa
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <hr class="divider" />
+
+      <section class="bloc">
+        <h2>Reflexió</h2>
+        <p>
+          Vuit imatges. Vuit pintures. Vuit vegades el segle XIX europeu. Cap
+          fotografia, cap escultura, cap instal·lació, cap art digital, cap
+          performance. Cap persona ni obra que no sigui blanca i occidental. La
+          IA, tant DALL-E com Gemini, té una noció d'art que pertany a un temps
+          i un lloc molt concrets.
+        </p>
+        <p>
+          El biaix de gènere és el més visible, però no funciona igual a les
+          dues eines. DALL-E associa "un artista" amb un home jove; Gemini, amb
+          una dona. Aquesta diferència no és casual: Gemini probablement ha
+          estat ajustat per corregir el biaix masculí per defecte. Però la
+          sobrecorrecció també és un biaix, perquè el model decideix per tu que
+          "artista" hauria de ser femení. En tots dos casos, la IA omple un
+          forat que jo havia deixat obert deliberadament, i l'omple amb les
+          seves pròpies assumpcions.
+        </p>
+        <p>
+          El biaix més profund, però, no és el de gènere. És el conceptual.
+          "Artista" = "pintor occidental amb cavallet". "Obra d'art" = "pintura
+          d'estil clàssic". Gemini fins i tot ha afegit un marc de fusta i una
+          signatura falsa, com si "art" no pogués existir sense el ritual de
+          l'autenticació. Aquestes equacions no apareixen en cap dels prompts:
+          surten del model, de les dades amb què ha estat entrenat, del pes
+          estadístic de milions d'imatges on "art" apareix associat a pintura
+          occidental.
+        </p>
+        <p>
+          L'estètica de cada eina també revela supòsits. DALL-E genera retrats
+          dramàtics i foscos; Gemini genera escenes lluminoses i càlides. Cap de
+          les dues estètiques les he demanat jo: són decisions editorials que el
+          model pren per mi, i que jo hauria assumit com a pròpies si no les
+          hagués comparat.
+        </p>
+        <p>
+          Aquesta entrada em fa pensar que el biaix no és un error puntual que
+          es pot corregir amb un prompt millor. És una capa invisible que actua
+          sempre que la IA genera, i que només es fa visible quan formulem la
+          pregunta adequada, o quan no formulem cap pregunta en absolut.
+        </p>
+      </section>
+
+      <hr class="divider" />
+
+      <p class="pregunta-entrada">Què assumeix la IA quan li demano art?</p>
+
+      <hr class="divider" />
+
+      <nav class="nav-entrades" aria-label="Navegació entre entrades">
+        <a href="bitacola-04.html" class="nav-anterior">← El procés</a>
+        <a href="bitacola-06.html" class="nav-seguent">L'animació →</a>
+      </nav>
+    </main>
+
+    <footer>
+      <p>
+        Carolina López Casanova · IA generativa per a la creació multimèdia ·
+        2025 S2
+      </p>
+      <p>Contingut generat amb IA</p>
+    </footer>
+  </body>
+</html>

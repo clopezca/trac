@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El moviment — Traç</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/bitacola.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="logo">TRAÇ</a>
+      <input type="checkbox" id="menu-toggle" hidden />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <a href="../index.html#ia">IA Generativa</a>
+        <a href="../index.html#referents">Referents</a>
+        <a href="../index.html#proces" class="active">El meu procés</a>
+        <a href="../index.html#glossari">Glossari</a>
+        <a href="../index.html#recursos">Recursos</a>
+      </nav>
+    </header>
+
+    <main class="entrada-main">
+      <nav class="breadcrumb" aria-label="Navegació de fil">
+        <a href="../index.html">Inici</a>
+        <span>/</span>
+        <a href="../index.html#proces">El meu procés</a>
+        <span>/</span>
+        <span>El moviment</span>
+      </nav>
+
+      <h1>El moviment</h1>
+
+      <div class="fitxa">
+        <div class="fitxa-item">
+          <span class="fitxa-label">Eina</span>
+          <span class="fitxa-value">Pika 2.5</span>
+        </div>
+        <div class="fitxa-item">
+          <span class="fitxa-label">Format</span>
+          <span class="fitxa-value">Vídeo</span>
+        </div>
+        <div class="fitxa-item">
+          <span class="fitxa-label">Pregunta</span>
+          <span class="fitxa-value"
+            >Pot el gest traduir-se en moviment digital?</span
+          >
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <section class="bloc">
+        <h2>Procés</h2>
+        <p>
+          El punt de partida era clar: agafar la imatge canònica del projecte,
+          el traç orgànic terracota que es transforma en línia digital cian, i
+          fer-la moure. Volia veure si el que en una imatge fixa és una metàfora
+          visual podia existir en el temps: si el gest podia traduir-se en
+          moviment digital.
+        </p>
+        <p>
+          He fet servir Pika 2.5 en mode image-to-video, pujant la imatge final
+          de "El gest" com a punt de partida. El primer prompt demanava una
+          transformació lenta d'esquerra a dreta, de la textura orgànica de la
+          pintura cap a una línia digital precisa, amb efectes de partícules
+          durant la transició. El resultat mostrava la transformació de manera
+          fluida: el terracota es dissol cap al cian amb partícules visibles al
+          punt de transició. El que li faltava era la sensació geomètrica al
+          final del traç cian.
+        </p>
+        <p>
+          He provat un segon prompt més específic, demanant píxels quadrats i
+          partícules geomètriques al final de la línia. El resultat va generar
+          text il·legible dins del vídeo, un error que l'eina comet quan
+          interpreta paraules descriptives com a instruccions tipogràfiques.
+          Aquesta variació s'ha descartat.
+        </p>
+        <p>
+          He triat el resultat del primer prompt com a definitiu. La
+          transformació és llegible, el moviment és fluid i el format
+          horitzontal és coherent amb la imatge original. El que li falta, la
+          geometria digital al final, ha passat a formar part de la reflexió.
+        </p>
+
+        <div class="proces-imatges">
+          <figure>
+            <img
+              src="../assets/img/gest-iteracio-07.png"
+              alt="Imatge de partida: traç orgànic terracota que es transforma en línia digital cian"
+            />
+            <figcaption>Imatge de partida — El gest, iteració 07</figcaption>
+          </figure>
+        </div>
+
+        <blockquote class="prompt">
+          <span class="prompt-label">Prompt 1 — triat</span>
+          "A horizontal brushstroke slowly transforming over time: organic
+          terracotta paint on the left gradually becomes a precise digital cyan
+          line on the right. The transformation flows from left to right. Subtle
+          particle effects during the transition. Cream background. Slow motion.
+          Static camera."
+        </blockquote>
+
+        <blockquote class="prompt">
+          <span class="prompt-label">Prompt 2 — descartat</span>
+          "A horizontal brushstroke transforming from left to right: starts as
+          thick organic terracotta paint with visible brush texture, and
+          gradually becomes a thin precise geometric cyan vector line with small
+          square pixels and dots at the end. The right tip dissolves into
+          geometric particles. Cream white background. Slow motion. Static
+          camera."
+        </blockquote>
+      </section>
+
+      <hr class="divider" />
+
+      <section class="bloc">
+        <h2>Resultat</h2>
+        <figure class="resultat">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            aria-label="Vídeo del traç terracota transformant-se en línia digital cian, generat amb Pika 2.5"
+          >
+            <source
+              src="../assets/video/moviment-resultat.mp4"
+              type="video/mp4"
+            />
+            <p>
+              El teu navegador no suporta la reproducció de vídeo. Pots
+              <a href="../assets/video/moviment-resultat.mp4" download
+                >descarregar el vídeo</a
+              >.
+            </p>
+          </video>
+          <figcaption>Vídeo generat amb Pika 2.5 — Prompt 1</figcaption>
+        </figure>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- REFLEXIÓ -->
+      <section class="bloc">
+        <h2>Reflexió</h2>
+        <p>
+          El vídeo funciona, però no del tot com havia imaginat. La
+          transformació de terracota a cian es veu, les partícules hi són, el
+          moviment és coherent amb l'estètica del projecte. Però el final del
+          traç no té la sensació digital que buscava: no hi ha píxels, no hi ha
+          línies vectorials, no hi ha la fredor geomètrica que la imatge
+          original capturava.
+        </p>
+        <p>
+          Pika ha llegit "digital" des d'una associació diferent de la meva. Per
+          a l'eina, "digital" és velocitat, precisió, afillament. Per a mi,
+          "digital" era geometria, píxel, estructura. Cap de les dues lectures
+          és incorrecta. Però la que ha guanyat no era la meva.
+        </p>
+        <p>
+          Això em porta a la mateixa pregunta que va emergir a "El procés": la
+          IA tradueix els conceptes des de les seves pròpies associacions
+          estadístiques, no des de la intenció de qui escriu el prompt. Puc
+          intentar ser més específica, com vaig fer amb el segon prompt, però
+          l'especificitat excessiva genera altres errors. Hi ha un límit on la
+          descripció precisa deixa de controlar el resultat i comença a
+          pertorbar-lo.
+        </p>
+        <p>
+          La pregunta de l'entrada era si el gest podia traduir-se en moviment
+          digital. La resposta és que sí, però no exactament el moviment que jo
+          tenia al cap. El gest ha passat a existir en el temps, però amb una
+          noció de "digital" que no era la meva.
+        </p>
+      </section>
+
+      <hr class="divider" />
+
+      <p class="pregunta-entrada">
+        Pot el gest traduir-se en moviment digital?
+      </p>
+
+      <hr class="divider" />
+
+      <nav class="nav-entrades" aria-label="Navegació entre entrades">
+        <a href="bitacola-02.html" class="nav-anterior">← La veu</a>
+        <a href="bitacola-04.html" class="nav-seguent">El procés →</a>
+      </nav>
+    </main>
+
+    <footer>
+      <p>
+        Carolina López Casanova · IA generativa per a la creació multimèdia ·
+        2025 S2
+      </p>
+      <p>Contingut generat amb IA</p>
+    </footer>
+  </body>
+</html>

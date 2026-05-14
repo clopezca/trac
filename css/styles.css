@@ -1,0 +1,606 @@
+/* ===================== */
+/* VARIABLES I RESET */
+/* ===================== */
+
+:root {
+  --cream: #f5f0eb;
+  --terra: #c17b3f;
+  --cyan: #00b4d8;
+  --graphite: #2d2d2d;
+  --grey: #8a8a8a;
+  --light: #e0d9d0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--graphite);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--terra);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--graphite);
+}
+
+/* ===================== */
+/* TIPOGRAFIA */
+/* ===================== */
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: var(--graphite);
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 60px;
+  letter-spacing: -3px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+/* ===================== */
+/* LAYOUT */
+/* ===================== */
+
+.section-inner {
+  padding: 48px 20px;
+}
+
+section {
+  border-bottom: 1px solid var(--light);
+}
+
+/* ===================== */
+/* HEADER */
+/* ===================== */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: var(--cream);
+  border-bottom: 1px solid var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 100;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--graphite);
+  letter-spacing: -1px;
+}
+
+.logo:hover {
+  color: var(--terra);
+}
+
+/* HAMBURGER — visible per defecte (mòbil) */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburger span {
+  width: 22px;
+  height: 1.5px;
+  background: var(--graphite);
+  display: block;
+  transition: 0.3s;
+}
+
+/* NAV — ocult per defecte (mòbil) */
+nav {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: var(--cream);
+  border-bottom: 1px solid var(--light);
+  flex-direction: column;
+  padding: 20px;
+  gap: 16px;
+}
+
+nav a {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--grey);
+}
+
+nav a:hover {
+  color: var(--terra);
+}
+
+/* Quan el checkbox està marcat, mostra el menú */
+#menu-toggle:checked ~ nav {
+  display: flex;
+}
+
+#menu-toggle:checked ~ .hamburger span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle:checked ~ .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked ~ .hamburger span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ===================== */
+/* PORTADA */
+/* ===================== */
+
+#portada {
+  padding-top: 60px;
+}
+
+.portada-inner {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 48px;
+}
+
+.subtitol {
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: var(--graphite);
+}
+
+.pregunta {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--terra);
+  margin-bottom: 32px;
+}
+
+.portada-imatge {
+  width: 100%;
+  margin: 0 0 32px;
+}
+
+.portada-imatge img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.motivacio {
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--graphite);
+  text-align: left;
+}
+
+/* ===================== */
+/* IA GENERATIVA */
+/* ===================== */
+
+.ia-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ia-text p {
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.ia-imatge img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* ===================== */
+/* REFERENTS */
+/* ===================== */
+
+.referents-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.referent-card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.referent-card p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--grey);
+}
+
+.pregunta-referent {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 13px !important;
+  color: var(--terra) !important;
+  margin-top: 12px;
+}
+
+/* ===================== */
+/* EL MEU PROCÉS */
+/* ===================== */
+
+.entrades-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.entrada {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--light);
+  flex-wrap: wrap;
+}
+
+.entrada:last-child {
+  border-bottom: none;
+}
+
+.entrada img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 2px;
+  flex-shrink: 0;
+  background: var(--light);
+}
+
+.entrada-info {
+  flex: 1;
+  min-width: 160px;
+}
+
+.entrada-num {
+  font-size: 10px;
+  color: var(--grey);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.entrada-info h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.entrada-eina {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--terra);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.entrada-info p {
+  font-size: 11px;
+  color: var(--grey);
+  margin: 0;
+}
+
+.llegir-mes {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--terra);
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding-top: 8px;
+}
+
+/* ===================== */
+/* GLOSSARI */
+/* ===================== */
+
+.glossari-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.glossari-grid dt {
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  color: var(--graphite);
+  padding: 12px 0 4px;
+}
+
+.glossari-grid dd {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--grey);
+  padding: 0 0 12px;
+  border-bottom: 1px solid var(--light);
+}
+
+/* ===================== */
+/* RECURSOS */
+/* ===================== */
+
+.recursos-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.recursos-bloc h3 {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--grey);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--light);
+  margin-bottom: 16px;
+}
+
+.recursos-bloc ul {
+  list-style: none;
+}
+
+.recursos-bloc li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--light);
+  font-size: 12px;
+}
+
+/* ===================== */
+/* FOOTER */
+/* ===================== */
+
+footer {
+  border-top: 1px solid var(--light);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 10px;
+  color: var(--grey);
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* ===================== */
+/* TABLET — 600px+ */
+/* ===================== */
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 34px;
+  }
+
+  .section-inner {
+    padding: 64px 32px;
+  }
+
+  .portada-imatge img {
+    height: 180px;
+  }
+
+  .pregunta {
+    font-size: 22px;
+  }
+
+  .referents-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .glossari-grid {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+  }
+
+  .glossari-grid dt {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--light);
+  }
+
+  .glossari-grid dd {
+    padding: 14px 0 14px 24px;
+    border-bottom: 1px solid var(--light);
+  }
+
+  .recursos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px;
+  }
+}
+
+/* ===================== */
+/* DESKTOP — 1024px+ */
+/* ===================== */
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 100px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+
+  header {
+    padding: 0 40px;
+  }
+
+  /* Amaga hamburger, mostra nav horitzontal */
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: transparent;
+    border: none;
+    padding: 0;
+    gap: 32px;
+  }
+
+  nav a {
+    font-size: 10px;
+  }
+
+  .section-inner {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 80px 40px;
+  }
+
+  .portada-inner {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .portada-imatge img {
+    height: 200px;
+  }
+
+  .pregunta {
+    font-size: 26px;
+    margin-bottom: 48px;
+  }
+
+  .motivacio {
+    max-width: 680px;
+    margin: 0 auto;
+    font-size: 13px;
+  }
+
+  .ia-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+
+  .referents-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .entrada img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .entrada-info h3 {
+    font-size: 20px;
+  }
+
+  .entrada-info p {
+    font-size: 12px;
+  }
+
+  .llegir-mes {
+    width: auto;
+    padding-top: 4px;
+  }
+
+  .glossari-grid {
+    grid-template-columns: 200px 1fr;
+  }
+
+  .glossari-grid dd {
+    padding-left: 32px;
+  }
+
+  .recursos-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+  }
+
+  footer {
+    padding: 32px 40px;
+  }
+}

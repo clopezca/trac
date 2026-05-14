@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El gest — Traç</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/bitacola.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="logo">TRAÇ</a>
+      <input type="checkbox" id="menu-toggle" hidden />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <a href="../index.html#ia">IA Generativa</a>
+        <a href="../index.html#referents">Referents</a>
+        <a href="../index.html#proces" class="active">El meu procés</a>
+        <a href="../index.html#glossari">Glossari</a>
+        <a href="../index.html#recursos">Recursos</a>
+      </nav>
+    </header>
+
+    <main class="entrada-main">
+      <nav class="breadcrumb" aria-label="Navegació de fil">
+        <a href="../index.html">Inici</a>
+        <span>/</span>
+        <a href="../index.html#proces">El meu procés</a>
+        <span>/</span>
+        <span>El gest</span>
+      </nav>
+
+      <h1>El gest</h1>
+
+      <div class="fitxa">
+        <div class="fitxa-item">
+          <span class="fitxa-label">Eina</span>
+          <span class="fitxa-value">DALL-E</span>
+        </div>
+        <div class="fitxa-item">
+          <span class="fitxa-label">Format</span>
+          <span class="fitxa-value">Imatge</span>
+        </div>
+        <div class="fitxa-item">
+          <span class="fitxa-label">Pregunta</span>
+          <span class="fitxa-value"
+            >Pot el gest humà existir en el digital?</span
+          >
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <section class="bloc">
+        <h2>Procés</h2>
+        <p>
+          El punt de partida d'aquesta entrada era senzill: volia generar una
+          imatge que capturés visualment la pregunta central del projecte. Una
+          imatge que mostrés el moment exacte en què el gest humà es converteix
+          en algorisme, on l'orgànic es dissol en el digital.
+        </p>
+        <p>
+          Vaig començar amb un prompt molt obert: demanar un traç de pinzell que
+          es convertís en línia digital perfecta. El resultat va ser interessant
+          però massa literal, apareixia un pinzell físic que no volia. Vaig anar
+          refinant: primer eliminant el pinzell, després especificant la
+          direcció esquerra-dreta, i finalment definint amb precisió els colors
+          del projecte (terracota #C17B3F i cian #00B4D8) i l'estètica editorial
+          que buscava.
+        </p>
+        <p>
+          En total vaig fer 7 iteracions de la imatge principal, més 4 textures
+          addicionals. Cada prompt era una negociació: jo proposava, la IA
+          interpretava, i jo decidia si aquella interpretació s'acostava al que
+          tenia al cap. El que més em va sorprendre va ser que la dificultat no
+          estava en descriure el resultat visual, sinó en descriure la
+          <em>qualitat</em> del gest: la imperfecció, la textura, el pes de la
+          pintura real.
+        </p>
+
+        <div class="proces-imatges">
+          <figure>
+            <img
+              src="../assets/img/gest-iteracio-01.png"
+              alt="Primera iteració — traç orgànic sobre fons blanc"
+            />
+            <figcaption>Iteració 01</figcaption>
+            <blockquote class="prompt">
+              <span class="prompt-label">Prompt</span>
+              "Hola, em podries generar una imatge d'un traç de pinzell a mà
+              sobre fons blanc que es converteix en línia digital perfecta,
+              tensió entre l'orgànic i el sintètic"
+            </blockquote>
+          </figure>
+          <figure>
+            <img
+              src="../assets/img/gest-iteracio-05.png"
+              alt="Iteració amb colors definitius del projecte"
+            />
+            <figcaption>Iteració 05</figcaption>
+            <blockquote class="prompt">
+              <span class="prompt-label">Prompt</span>
+              "Tornem a la imatge del traç, farem alguns canvis perquè sigui més
+              contrastada la transició. A l'esquerra, una pinzellada orgànica de
+              color terracota (#C17B3F), amb textura de pintura real, marques
+              visibles de les truges del pinzell, expressiva i imperfecta. La
+              pinzellada es transforma progressivament cap a la dreta en una
+              línia digital perfectament recta i fina de color cian elèctric
+              (#00B4D8), suau i precisa. La transició barreja la textura
+              orgànica amb una geometria neta i digital. Composició horitzontal
+              centrada sobre un fons crema amb textura de paper (#F5F0EB).
+              Estètica editorial, sofisticada i minimalista, amb molt espai en
+              blanc i contrast entre elements càlids orgànics i elements freds
+              digitals."
+            </blockquote>
+          </figure>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <section class="bloc">
+        <h2>Resultat</h2>
+        <figure class="resultat">
+          <img
+            src="../assets/img/gest-iteracio-07.png"
+            alt="Pinzellada terracota expressiva que es transforma gradualment en línia digital cian perfectament recta, sobre fons crema"
+          />
+          <figcaption>Imatge generada amb DALL-E — Prompt 7</figcaption>
+          <blockquote class="prompt">
+            <span class="prompt-label">Prompt</span>
+            "El traç ha de ser recte i horitzontal, sense cap corba ni
+            ondulació. Comença amb una pinzellada terracota gruixuda amb textura
+            de pintura i es transforma gradualment en una línia digital blava
+            fina i perfectament recta. Composició panoràmica molt ampla i
+            baixa."
+          </blockquote>
+        </figure>
+      </section>
+
+      <hr class="divider" />
+
+      <section class="bloc">
+        <h2>Reflexió</h2>
+        <p>
+          El procés d'iteració em va revelar alguna cosa que no havia anticipat:
+          la IA té molt bona memòria per a la geometria i la composició, però li
+          costa molt la imperfecció intencionada. Quan li demanava un gest
+          "expressiu i imperfecte", tendia a generar alguna cosa que semblava
+          imperfecte però d'una manera massa simètrica, massa neta. La
+          imperfecció real, la del gest humà, és irregular d'una manera
+          específica que els models semblen no acabar de capturar.
+        </p>
+        <p>
+          Això em va fer pensar en el títol del projecte d'una manera nova. El
+          <em>traç</em> no és només el resultat visual: és tot el que passa
+          entre la intenció i l'execució. I en aquest espai, entre el que volia
+          i el que la IA va generar, és precisament on es troba la pregunta que
+          vull explorar.
+        </p>
+        <p>
+          La decisió final va ser sempre meva: de les 7 iteracions, vaig triar
+          la que millor capturava la tensió sense resoldre-la. No la més
+          perfecta, sinó la més honesta.
+        </p>
+      </section>
+
+      <hr class="divider" />
+
+      <p class="pregunta-entrada">Pot el gest humà existir en el digital?</p>
+
+      <hr class="divider" />
+
+      <nav class="nav-entrades" aria-label="Navegació entre entrades">
+        <span class="nav-anterior"></span>
+        <a href="bitacola-02.html" class="nav-seguent">La veu →</a>
+      </nav>
+    </main>
+
+    <footer>
+      <p>
+        Carolina López Casanova · IA generativa per a la creació multimèdia ·
+        2025 S2
+      </p>
+      <p>Contingut generat amb IA</p>
+    </footer>
+  </body>
+</html>

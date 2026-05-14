@@ -1,0 +1,409 @@
+/* ===================== */
+/* BITÀCOLA — ENTRADA */
+/* ===================== */
+
+/* Espai pel header fix */
+.entrada-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 20px 60px;
+}
+
+/* ===================== */
+/* BREADCRUMB */
+/* ===================== */
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  color: var(--grey);
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  position: static;
+  background: transparent;
+  border: none;
+  flex-direction: row;
+  padding: 0;
+}
+
+.breadcrumb a {
+  color: var(--grey);
+}
+
+.breadcrumb a:hover {
+  color: var(--terra);
+}
+
+.breadcrumb span {
+  color: var(--light);
+}
+
+/* ===================== */
+/* H1 */
+/* ===================== */
+
+.entrada-main h1 {
+  font-size: clamp(36px, 8vw, 52px);
+  letter-spacing: -2px;
+  margin-bottom: 32px;
+}
+
+/* ===================== */
+/* FITXA */
+/* ===================== */
+
+.fitxa {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--light);
+  margin-bottom: 40px;
+}
+
+.fitxa-item {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--light);
+}
+
+.fitxa-item:last-child {
+  border-bottom: none;
+}
+
+.fitxa-label {
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--grey);
+  margin-bottom: 4px;
+}
+
+.fitxa-value {
+  font-size: 12px;
+  color: var(--graphite);
+  line-height: 1.4;
+}
+
+/* ===================== */
+/* DIVIDER */
+/* ===================== */
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--light);
+  margin: 40px 0;
+}
+
+/* ===================== */
+/* BLOCS */
+/* ===================== */
+
+.bloc h2 {
+  font-size: clamp(20px, 4vw, 28px);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.bloc p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--graphite);
+}
+
+/* ===================== */
+/* PROMPT */
+/* ===================== */
+
+.prompt {
+  margin-top: 8px;
+  padding: 12px 16px;
+  border-left: 2px solid var(--light);
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--grey);
+  font-style: normal;
+}
+
+.prompt-label {
+  display: block;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--terra);
+  margin-bottom: 4px;
+}
+
+/* ===================== */
+/* IMATGES PROCÉS */
+/* ===================== */
+
+.proces-imatges {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.proces-imatges figure {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.proces-imatges img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  background: var(--light);
+}
+
+.proces-imatges figcaption {
+  font-size: 10px;
+  color: var(--grey);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ===================== */
+/* RESULTAT */
+/* ===================== */
+
+.resultat {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.resultat img {
+  width: 100%;
+  border-radius: 2px;
+  background: var(--light);
+}
+
+.resultat figcaption {
+  font-size: 10px;
+  color: var(--grey);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ===================== */
+/* PREGUNTA */
+/* ===================== */
+
+.pregunta-entrada {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: clamp(16px, 3vw, 22px);
+  color: var(--terra);
+  text-align: center;
+  padding: 32px 20px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ===================== */
+/* NAVEGACIÓ ENTRADES */
+/* ===================== */
+
+.nav-entrades {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+  background: transparent;
+  border: none;
+  flex-direction: row;
+  padding: 0;
+  gap: 0;
+}
+
+.nav-anterior,
+.nav-seguent {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--terra);
+}
+
+.nav-anterior:hover,
+.nav-seguent:hover {
+  color: var(--graphite);
+}
+
+/* ===================== */
+/* FIL (A i B) */
+/* ===================== */
+
+.fil h2 {
+  font-style: italic;
+  color: var(--terra);
+}
+
+.fil-intro {
+  font-size: 12px;
+  color: var(--grey);
+  margin-bottom: 32px;
+  font-style: italic;
+}
+
+/* ===================== */
+/* BLOC DE CADA PROMPT */
+/* ===================== */
+
+.prompt-bloc {
+  margin-bottom: 40px;
+  padding-bottom: 32px;
+  border-bottom: 1px dashed var(--light);
+}
+
+.prompt-bloc:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.prompt-tag {
+  display: block;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--terra);
+  margin-bottom: 12px;
+}
+
+.prompt-imatge {
+  margin-top: 16px;
+}
+
+.prompt-imatge img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  background: var(--light);
+}
+
+/* ===================== */
+/* CITA LITERÀRIA (Fil B - P1) */
+/* ===================== */
+
+.cita-literaria {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--graphite);
+  padding: 20px 24px;
+  border-left: 2px solid var(--terra);
+  background: rgba(193, 123, 63, 0.04);
+  margin: 24px 0;
+}
+
+/* ===================== */
+/* COMPARATIVA */
+/* ===================== */
+
+.comparativa {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.comparativa-fila {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.comparativa-cel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.comparativa-tag {
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--grey);
+}
+
+.comparativa-cel img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 2px;
+  background: var(--light);
+}
+
+/* ===================== */
+/* TABLET — 600px+ */
+/* ===================== */
+
+@media (min-width: 600px) {
+  .entrada-main {
+    padding: 90px 32px 80px;
+  }
+
+  .fitxa {
+    flex-direction: row;
+  }
+
+  .fitxa-item {
+    flex: 1;
+    border-bottom: none;
+    border-right: 1px solid var(--light);
+  }
+
+  .fitxa-item:last-child {
+    border-right: none;
+  }
+
+  .proces-imatges {
+    flex-direction: row;
+  }
+
+  .proces-imatges figure {
+    flex: 1;
+  }
+
+  .comparativa-cel img {
+    aspect-ratio: 16/10;
+  }
+
+  .cita-literaria {
+    font-size: 15px;
+    padding: 24px 32px;
+  }
+}
+
+/* ===================== */
+/* DESKTOP — 1024px+ */
+/* ===================== */
+
+@media (min-width: 1024px) {
+  .entrada-main {
+    padding: 100px 40px 80px;
+  }
+
+  .pregunta-entrada {
+    padding: 48px 40px;
+  }
+
+  .comparativa {
+    gap: 32px;
+  }
+
+  .comparativa-fila {
+    gap: 16px;
+  }
+
+  .cita-literaria {
+    font-size: 16px;
+    padding: 28px 40px;
+  }
+}

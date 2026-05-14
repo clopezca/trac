@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La veu — Traç</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/bitacola.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="logo">TRAÇ</a>
+      <input type="checkbox" id="menu-toggle" hidden />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <a href="../index.html#ia">IA Generativa</a>
+        <a href="../index.html#referents">Referents</a>
+        <a href="../index.html#proces" class="active">El meu procés</a>
+        <a href="../index.html#glossari">Glossari</a>
+        <a href="../index.html#recursos">Recursos</a>
+      </nav>
+    </header>
+
+    <main class="entrada-main">
+      <nav class="breadcrumb" aria-label="Navegació de fil">
+        <a href="../index.html">Inici</a>
+        <span>/</span>
+        <a href="../index.html#proces">El meu procés</a>
+        <span>/</span>
+        <span>La veu</span>
+      </nav>
+
+      <h1>La veu</h1>
+
+      <div class="fitxa">
+        <div class="fitxa-item">
+          <span class="fitxa-label">Eina</span>
+          <span class="fitxa-value">Holly+</span>
+        </div>
+        <div class="fitxa-item">
+          <span class="fitxa-label">Format</span>
+          <span class="fitxa-value">Àudio</span>
+        </div>
+        <div class="fitxa-item">
+          <span class="fitxa-label">Pregunta</span>
+          <span class="fitxa-value"
+            >Si una màquina canta amb la meva veu, qui canta?</span
+          >
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <section class="bloc">
+        <h2>Procés</h2>
+        <p>
+          El punt de partida era clar: gravar la meva veu i transformar-la amb
+          Holly+. El que no era clar era com.
+        </p>
+        <p>
+          El primer intent ha estat gravar-me llegint la pregunta central del
+          projecte: "Quan creem amb IA, qui fa el traç?". La gravació en si
+          sonava bé, però en pujar-la a Holly+ el resultat era molt sorollós i
+          artificial, no en el sentit expressiu sinó en el sentit tècnic. He
+          provat d'ajustar els filtres de l'eina (highpass i lowpass) fins a
+          trobar una configuració que reduís els artefactes, però el resultat
+          seguia sonant com una veu dins d'una caixa, distant i desdibuixada.
+        </p>
+        <p>
+          He decidit canviar d'enfocament i provar amb veu cantada, que és per
+          al que Holly+ està principalment pensada. He triat "La lluna, la
+          pruna", una cançó tradicional catalana de domini públic, senzilla i de
+          melodia clara. Holly+ no accepta fragments llargs, de manera que
+          finalment he gravat només l'inici de la cançó: "La lluna, la pruna".
+          Amb els ajustos per defecte de l'eina, el resultat ha estat molt més
+          net que amb la veu parlada, tot i que sonava clarament robòtic i
+          sintètic.
+        </p>
+        <p>
+          He decidit quedar-me amb aquest resultat i pujar també la gravació
+          original, perquè escoltar els dos arxius junts fa visible la
+          transformació de manera directa: la mateixa melodia, el mateix ritme,
+          però una veu que ja no és la meva.
+        </p>
+
+        <figure>
+          <img
+            src="../assets/img/entrada-02-gran.png"
+            alt="Captura de la interfície de Holly+ durant el procés de transformació de veu"
+          />
+          <figcaption>Imatge generada amb DALL-E</figcaption>
+        </figure>
+      </section>
+
+      <hr class="divider" />
+
+      <section class="bloc">
+        <h2>Resultat</h2>
+
+        <figure class="resultat">
+          <img
+            src="../assets/img/holly-proces.png"
+            alt="Visualització abstracta d'una veu que es transforma en ones digitals, tons terracota i cian"
+          />
+          <figcaption>Interfície de Holly+ durant la transformació</figcaption>
+        </figure>
+
+        <p class="audio-label">Veu original</p>
+        <audio controls>
+          <source src="../assets/audio/veu-original.m4a" type="audio/mp4" />
+        </audio>
+
+        <p class="audio-label">Veu transformada amb Holly+</p>
+        <audio controls>
+          <source src="../assets/audio/veu-holly.mp3" type="audio/mpeg" />
+        </audio>
+      </section>
+
+      <hr class="divider" />
+
+      <section class="bloc">
+        <h2>Reflexió</h2>
+        <p>
+          Escoltar la meva veu transformada ha estat una experiència estranya.
+          El resultat és reconeixiblement "cantat" — manté el ritme i
+          l'entonació de la meva gravació, però el timbre és completament
+          diferent. No és la meva veu. Tampoc és exactament la veu de Holly
+          Herndon. És una tercera cosa que no pertany del tot a ningú.
+        </p>
+        <p>
+          El procés ha revelat una limitació important de l'eina: Holly+
+          funciona molt millor amb veu cantada que amb veu parlada, i millor amb
+          fragments amb context melòdic suficient que amb fragments molt curts.
+          Això ha condicionat l'experiment d'una manera que no havia previst, i
+          ha obligat a adaptar la idea inicial. Paradoxalment, aquesta adaptació
+          ha fet l'experiment més interessant: el resultat no és el que havia
+          imaginat, i precisament per això diu alguna cosa sobre com funciona la
+          IA.
+        </p>
+        <p>
+          La pregunta "si una màquina canta amb la meva veu, qui canta?" té ara
+          una resposta sonora concreta: canta una cosa que ja no és del tot
+          humana ni del tot sintètica. I aquesta ambigüitat és exactament el que
+          el projecte vol explorar.
+        </p>
+      </section>
+
+      <hr class="divider" />
+
+      <p class="pregunta-entrada">
+        Si una màquina canta amb la meva veu, qui canta?
+      </p>
+
+      <hr class="divider" />
+
+      <nav class="nav-entrades" aria-label="Navegació entre entrades">
+        <a href="bitacola-01.html" class="nav-anterior">← El gest</a>
+        <a href="bitacola-03.html" class="nav-seguent">El moviment →</a>
+      </nav>
+    </main>
+
+    <footer>
+      <p>
+        Carolina López Casanova · IA generativa per a la creació multimèdia ·
+        2025 S2
+      </p>
+      <p>Contingut generat amb IA</p>
+    </footer>
+  </body>
+</html>
