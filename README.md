@@ -20,7 +20,8 @@ El projecte és accessible en línia a: https://clopezca.github.io/trac/
 │   ├── bitacola-03.html    # El moviment (vídeo)
 │   ├── bitacola-04.html    # El procés (imatge)
 │   ├── bitacola-05.html    # El biaix (text + imatge)
-│   └── bitacola-06.html    # L'animació (animació)
+│   ├── bitacola-06.html    # L'animació (animació)
+│   └── bitacola-07.html    # La memòria (text + imatge)
 └── assets/
     ├── img/                # Imatges generades amb DALL-E
     ├── audio/              # Àudio original i transformat amb Holly+

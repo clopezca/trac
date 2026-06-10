@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La memòria — Traç</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/bitacola.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="logo">TRAÇ</a>
+      <input type="checkbox" id="menu-toggle" hidden />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <a href="../index.html#ia">IA Generativa</a>
+        <a href="../index.html#referents">Referents</a>
+        <a href="../index.html#proces" class="active">El meu procés</a>
+        <a href="../index.html#glossari">Glossari</a>
+        <a href="../index.html#recursos">Recursos</a>
+      </nav>
+    </header>
+
+    <main class="entrada-main">
+      <nav class="breadcrumb" aria-label="Navegació de fil">
+        <a href="../index.html">Inici</a>
+        <span>/</span>
+        <a href="../index.html#proces">El meu procés</a>
+        <span>/</span>
+        <span>La memòria</span>
+      </nav>
+
+      <h1>La memòria</h1>
+
+      <div class="fitxa">
+        <div class="fitxa-item">
+          <span class="fitxa-label">Eina</span>
+          <span class="fitxa-value">ChatGPT (Projectes)</span>
+        </div>
+        <div class="fitxa-item">
+          <span class="fitxa-label">Format</span>
+          <span class="fitxa-value">Imatge + Text</span>
+        </div>
+        <div class="fitxa-item">
+          <span class="fitxa-label">Pregunta</span>
+          <span class="fitxa-value"
+            >Quan la IA em coneix, la creació canvia?</span
+          >
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- PROCÉS -->
+      <section class="bloc">
+        <h2>Procés</h2>
+        <p>
+          Aquesta entrada explora una funcionalitat que no havia fet servir fins
+          ara: els projectes de ChatGPT, que permeten donar instruccions
+          permanents i fitxers de referència perquè la IA treballi amb un
+          context definit per mi. Volia veure si construir deliberadament una
+          relació amb l'eina canvia el resultat creatiu, a diferència de
+          l'entrada 04, on el context s'havia acumulat passivament al llarg de
+          les converses.
+        </p>
+        <p>
+          He creat un projecte a ChatGPT amb les instruccions del projecte Traç
+          (paleta, estètica, pregunta central, to) i hi he pujat el moodboard
+          com a referència visual. Després he llançat el mateix prompt a dos
+          llocs: dins del projecte i en un fil nou sense cap context.
+        </p>
+        <p>
+          El prompt era idèntic: "Crea una imatge que representi el projecte
+          Traç". Al fil nou, per compensar la manca de context, he afegit una
+          breu descripció: "un projecte sobre la relació entre la IA i la
+          creativitat artística, anomenat Traç".
+        </p>
+        <p>
+          Dins del projecte he fet també dues preguntes tècniques: quins colors
+          definirien el projecte i quin to hauria de tenir el text d'una nova
+          entrada. Volia veure si la IA, quan la instruïm explícitament, és
+          capaç de respondre com ho faria algú que coneix el projecte de debò.
+        </p>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- RESULTAT — COMPARATIVA -->
+      <section class="bloc">
+        <h2>Resultat</h2>
+
+        <div class="comparativa">
+          <div class="comparativa-fila">
+            <div class="comparativa-cel">
+              <span class="comparativa-tag">Projecte · em coneix</span>
+              <img
+                src="../assets/img/memoria-projecte.png"
+                alt="Imatge generada dins del projecte de ChatGPT: pòster amb paleta terracota i cian, tipografia Playfair Display, pregunta central i paraules clau del moodboard"
+              />
+            </div>
+            <div class="comparativa-cel">
+              <span class="comparativa-tag">Fil nou · no em coneix</span>
+              <img
+                src="../assets/img/memoria-filnou.png"
+                alt="Imatge generada en fil nou: collage amb cara digital, píxels blaus, David de Miquel Àngel i eslògan optimista"
+              />
+            </div>
+          </div>
+        </div>
+
+        <blockquote class="prompt">
+          <span class="prompt-label">Prompt (projecte)</span>
+          "Crea una imatge que representi el projecte Traç"
+        </blockquote>
+
+        <blockquote class="prompt">
+          <span class="prompt-label">Prompt (fil nou)</span>
+          "Crea una imatge que representi un projecte sobre la relació entre la
+          IA i la creativitat artística, anomenat Traç"
+        </blockquote>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- REFLEXIÓ -->
+      <section class="bloc">
+        <h2>Reflexió</h2>
+        <p>
+          La diferència entre les dues imatges és radical. El projecte que em
+          coneix ha generat un pòster amb la paleta exacta del projecte
+          (terracota i cian), la tipografia Playfair Display, les paraules clau
+          del moodboard i la pregunta central. El fil nou ha generat un collage
+          de tòpics: cara digital, píxels blaus, David de Miquel Àngel, bombeta
+          d'inspiració i un eslògan optimista ("No es tracta de qui crea, sinó
+          del que podem crear junts").
+        </p>
+        <p>
+          El que més em colpeix no és la diferència visual, que era esperable.
+          És la diferència de to. El projecte que em coneix manté la tensió
+          oberta: "Explorar. Registrar. Dubtar. Connectar. Crear. Seguir el
+          traç." El fil nou la resol amb un eslògan. La IA sense context
+          converteix una pregunta en una resposta. La IA amb context la manté
+          com a pregunta. Exactament el que vull al projecte, i exactament el
+          que no li he demanat explícitament.
+        </p>
+        <p>
+          Les respostes a les preguntes tècniques van en la mateixa direcció.
+          Quan li pregunto quins colors definirien el projecte, no em proposa
+          una paleta nova: em retorna la meva amb una interpretació conceptual
+          que no li he donat ("El terracota és la mà. El cian és el sistema. El
+          carbó és la reflexió. El crema és l'espai on tots dos deixen el seu
+          rastre"). Quan li pregunto quin to hauria de tenir una entrada nova,
+          descriu exactament la veu que he anat construint al llarg de la
+          bitàcola: "una anotació de camp d'algú que està investigant mentre
+          camina". No li he explicat mai el meu to amb aquestes paraules, però
+          les ha destil·lat del context que li he donat.
+        </p>
+        <p>
+          Això em porta a una pregunta incòmoda. Si la IA que em coneix és capaç
+          de descriure el meu projecte millor del que jo mateixa ho faria en
+          fred, on és el límit entre "recordar el que li he dit" i "entendre el
+          que vull"? La resposta tècnica és que no entén res, calcula
+          probabilitats. Però l'experiència de treballar amb una IA que respon
+          com si entengués el projecte és difícil de distingir de treballar amb
+          algú que realment l'entén.
+        </p>
+        <p>
+          La pregunta de l'entrada era si la creació canvia quan la IA em
+          coneix. La resposta és que sí, i de manera significativa. La IA sense
+          context crea des dels tòpics del model. La IA amb context crea des del
+          meu rastre. Però el meu rastre, un cop dins del sistema, deixa de ser
+          només meu.
+        </p>
+      </section>
+
+      <hr class="divider" />
+
+      <p class="pregunta-entrada">Quan la IA em coneix, la creació canvia?</p>
+
+      <hr class="divider" />
+
+      <nav class="nav-entrades" aria-label="Navegació entre entrades">
+        <a href="bitacola-06.html" class="nav-anterior">← L'animació</a>
+        <span class="nav-seguent"></span>
+      </nav>
+    </main>
+
+    <footer>
+      <p>
+        Carolina López Casanova · IA generativa per a la creació multimèdia ·
+        2025 S2
+      </p>
+      <p>Contingut generat amb IA</p>
+    </footer>
+  </body>
+</html>
